@@ -1,0 +1,19 @@
+version: "3"
+services:
+  mc-nh:
+    image: marctv/minecraft-papermc-server:latest
+    restart: always
+    container_name: "mc-server-nh"
+    environment:
+      MEMORYSIZE: "1G"
+      PAPERMC_FLAGS: ""
+    volumes:
+      - mcserver-nh:/data
+    ports:
+      - "55555:25565"
+    # The following allow `docker attach minecraft` to work
+    stdin_open: true
+    tty: true
+volumes:
+  mcserver-nh:
+
