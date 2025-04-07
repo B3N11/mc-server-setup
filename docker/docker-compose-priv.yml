@@ -5,7 +5,7 @@ services:
     restart: always
     container_name: "mc-server-priv"
     environment:
-      MEMORYSIZE: "2G"
+      MEMORYSIZE: "1G"
       PAPERMC_FLAGS: ""
     volumes:
       - mcserver-priv:/data

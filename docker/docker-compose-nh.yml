@@ -11,6 +11,7 @@ services:
       - mcserver-nh:/data
     ports:
       - "55555:25565"
+      - "24454:24454/udp"
     # The following allow `docker attach minecraft` to work
     stdin_open: true
     tty: true

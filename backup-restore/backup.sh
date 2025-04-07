@@ -10,7 +10,7 @@ echo "Starting..."
 # Define variables
 container=$1
 timestamp=$(date "+%Y_%m_%d_%H%M")
-filename="backup_${timestamp}.tar"
+filename="backup_(${container})_${timestamp}.tar"
 
 printf "COMPRESSING WORLD DIRECTORIES..."
 # Create tar file in container
