@@ -14,7 +14,7 @@ container=$2
 
 # Remove world directories from container
 printf "REMOVING PREVIOUS WORLDS..."
-docker exec ${container} rm -r world world_nether world_the_end
+docker exec ${container} rm -r world world_nether world_the_end plugins server.properties
 echo "DONE!"
 
 # Copy and extract tar file

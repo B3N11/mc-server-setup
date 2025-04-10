@@ -14,7 +14,7 @@ filename="backup_(${container})_${timestamp}.tar"
 
 printf "COMPRESSING WORLD DIRECTORIES..."
 # Create tar file in container
-docker exec ${container} tar -cf ${filename} world world_nether world_the_end
+docker exec ${container} tar -cf ${filename} world world_nether world_the_end plugins/*.jar server.properties
 echo "DONE!"
 
 printf "COPYING TO HOST..."
